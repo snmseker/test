@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #lamba{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        button{
+            margin-left: 20px;
+            padding: 10px;
+            color: black;
+            background-color: bisque;
+            border-radius: 5px;
+            border: 1px solid #ccc ;
+        }
+            button:hover{
+            padding: 15px;
+            color: white;
+            background-color: blueviolet;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        </style>
+</head>
+
+<body>
+    <img src="kapali.png" alt="off" id="lamba">
+    <br><br>
+    <button id="ac">AÇ</button>
+    <button id="kapat">KAPAT</button>
+
+    <script>
+        document.getElementById("ac").onclick=function(){
+            document.getElementById("lamba").src="acik.png";
+        }
+        document.getElementById("kapat").onclick=function(){
+            document.getElementById("lamba").src="kapali.png";
+        }
+    </script>
+</body>
+</html>
